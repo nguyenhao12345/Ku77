@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeViewTableViewCell" rowHeight="103" id="4Yf-IC-wyg" customClass="HomeViewTableViewCell" customModule="MyApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Yf-IC-wyg" id="pbl-mG-Rf8">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zB4-pS-qcu">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul8-ll-lsR">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ul8-ll-lsR" firstAttribute="leading" secondItem="zB4-pS-qcu" secondAttribute="leading" id="0AN-RC-tAJ"/>
+                            <constraint firstAttribute="bottom" secondItem="ul8-ll-lsR" secondAttribute="bottom" id="3LV-7d-ZsU"/>
+                            <constraint firstAttribute="height" constant="60" id="Qon-pi-ZCD"/>
+                            <constraint firstItem="ul8-ll-lsR" firstAttribute="top" secondItem="zB4-pS-qcu" secondAttribute="top" id="QtY-81-nA1"/>
+                            <constraint firstAttribute="width" constant="60" id="aas-dj-MXe"/>
+                            <constraint firstAttribute="trailing" secondItem="ul8-ll-lsR" secondAttribute="trailing" id="lvT-8s-Z7D"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cao: 1m7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-ci-Bnb">
+                        <rect key="frame" x="78" y="44" width="71" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SN: 2001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73i-BI-zmf">
+                        <rect key="frame" x="159" y="44" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Văn A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c3-Km-1jB">
+                        <rect key="frame" x="78" y="15" width="328" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Oje-ci-Bnb" firstAttribute="leading" secondItem="3c3-Km-1jB" secondAttribute="leading" id="9p6-um-in5"/>
+                    <constraint firstAttribute="trailing" secondItem="3c3-Km-1jB" secondAttribute="trailing" constant="8" id="BDZ-KN-gzJ"/>
+                    <constraint firstAttribute="bottom" secondItem="zB4-pS-qcu" secondAttribute="bottom" constant="10" id="BeJ-zj-uZY"/>
+                    <constraint firstItem="zB4-pS-qcu" firstAttribute="leading" secondItem="pbl-mG-Rf8" secondAttribute="leading" constant="10" id="JmZ-2Y-yTd"/>
+                    <constraint firstItem="zB4-pS-qcu" firstAttribute="top" secondItem="pbl-mG-Rf8" secondAttribute="top" constant="10" id="POD-JT-a7D"/>
+                    <constraint firstItem="73i-BI-zmf" firstAttribute="bottom" secondItem="Oje-ci-Bnb" secondAttribute="bottom" id="cPz-Nd-pXZ"/>
+                    <constraint firstItem="3c3-Km-1jB" firstAttribute="leading" secondItem="zB4-pS-qcu" secondAttribute="trailing" constant="8" id="eTo-Zw-SQx"/>
+                    <constraint firstItem="Oje-ci-Bnb" firstAttribute="bottom" secondItem="ul8-ll-lsR" secondAttribute="bottom" constant="-5" id="mZX-Z7-Mk7"/>
+                    <constraint firstItem="3c3-Km-1jB" firstAttribute="top" secondItem="ul8-ll-lsR" secondAttribute="top" constant="5" id="qO4-T9-KTP"/>
+                    <constraint firstItem="73i-BI-zmf" firstAttribute="leading" secondItem="Oje-ci-Bnb" secondAttribute="trailing" constant="10" id="qpu-uK-lhC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="HomeViewTableViewCell"/>
+            <connections>
+                <outlet property="heightPlayerLabel" destination="Oje-ci-Bnb" id="451-Cq-i8a"/>
+                <outlet property="heightTypePlayerConstraint" destination="Qon-pi-ZCD" id="iLa-md-mEi"/>
+                <outlet property="namePlayerLabel" destination="3c3-Km-1jB" id="T7n-sS-73S"/>
+                <outlet property="typePlayerLabel" destination="ul8-ll-lsR" id="d6L-ng-0Ko"/>
+                <outlet property="typeView" destination="zB4-pS-qcu" id="vQ7-sd-SIM"/>
+                <outlet property="widthTypePlayerConstraint" destination="aas-dj-MXe" id="9vg-hP-Vfh"/>
+                <outlet property="yearPlayerLabel" destination="73i-BI-zmf" id="QUu-4l-exM"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="12.388392857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

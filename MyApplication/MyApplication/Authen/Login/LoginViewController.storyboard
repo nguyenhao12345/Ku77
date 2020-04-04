@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r8R-oh-vcQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="aHz-aq-yDS">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r8R-oh-vcQ" customClass="LoginViewController" customModule="MyApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gea-oy-E1c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTb-bU-rk6">
+                                <rect key="frame" x="63.5" y="328" width="287" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xog-Sg-AtA" customClass="GradientButton" customModule="MyApplication" customModuleProvider="target">
+                                        <rect key="frame" x="36.5" y="120" width="214" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tt0-Iv-YRR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Đăng nhập">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="r8R-oh-vcQ" eventType="touchUpInside" id="4y3-8y-ZF5"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuG-rJ-hO7">
+                                        <rect key="frame" x="15" y="70" width="257" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="95n-cO-BD7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibn-DK-L3s">
+                                        <rect key="frame" x="15" y="20" width="257" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rUl-TF-04F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPj-O4-43h" customClass="GradientButton" customModule="MyApplication" customModuleProvider="target">
+                                        <rect key="frame" x="36.5" y="180" width="214" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="X6z-aJ-yEe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Đăng ký">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="regrisButton:" destination="r8R-oh-vcQ" eventType="touchUpInside" id="II3-nJ-0Zx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.53333333333333333" green="0.97647058823529409" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="JPj-O4-43h" firstAttribute="width" secondItem="ibn-DK-L3s" secondAttribute="width" multiplier="2.5/3" id="6zx-YT-Ckn"/>
+                                    <constraint firstItem="ibn-DK-L3s" firstAttribute="top" secondItem="BTb-bU-rk6" secondAttribute="top" constant="20" id="IA2-zd-KHM"/>
+                                    <constraint firstAttribute="bottom" secondItem="JPj-O4-43h" secondAttribute="bottom" constant="20" id="NyJ-sY-r8X"/>
+                                    <constraint firstItem="xog-Sg-AtA" firstAttribute="width" secondItem="ibn-DK-L3s" secondAttribute="width" multiplier="2.5/3" id="W2A-Rq-LGL"/>
+                                    <constraint firstAttribute="trailing" secondItem="fuG-rJ-hO7" secondAttribute="trailing" constant="15" id="aU2-iu-i1i"/>
+                                    <constraint firstItem="JPj-O4-43h" firstAttribute="top" secondItem="xog-Sg-AtA" secondAttribute="bottom" constant="15" id="fgw-zr-B5g"/>
+                                    <constraint firstItem="xog-Sg-AtA" firstAttribute="top" secondItem="fuG-rJ-hO7" secondAttribute="bottom" constant="15" id="g4s-RZ-cQA"/>
+                                    <constraint firstItem="xog-Sg-AtA" firstAttribute="centerX" secondItem="ibn-DK-L3s" secondAttribute="centerX" id="hVG-cR-86o"/>
+                                    <constraint firstItem="fuG-rJ-hO7" firstAttribute="leading" secondItem="BTb-bU-rk6" secondAttribute="leading" constant="15" id="jOL-jG-nQv"/>
+                                    <constraint firstAttribute="trailing" secondItem="ibn-DK-L3s" secondAttribute="trailing" constant="15" id="mQn-j1-vgf"/>
+                                    <constraint firstItem="fuG-rJ-hO7" firstAttribute="top" secondItem="ibn-DK-L3s" secondAttribute="bottom" constant="15" id="sfn-ax-PVO"/>
+                                    <constraint firstItem="ibn-DK-L3s" firstAttribute="leading" secondItem="BTb-bU-rk6" secondAttribute="leading" constant="15" id="tUt-Si-air"/>
+                                    <constraint firstAttribute="width" constant="287" id="y1q-Hj-SIV"/>
+                                    <constraint firstItem="JPj-O4-43h" firstAttribute="centerX" secondItem="ibn-DK-L3s" secondAttribute="centerX" id="y4W-Rs-h3c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BTb-bU-rk6" firstAttribute="centerX" secondItem="Gke-a3-grC" secondAttribute="centerX" id="ZAw-b4-evM"/>
+                            <constraint firstItem="BTb-bU-rk6" firstAttribute="centerY" secondItem="Gke-a3-grC" secondAttribute="centerY" id="qdV-4A-2WD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gke-a3-grC"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="BTb-bU-rk6" id="OsU-kD-hZ0"/>
+                        <outlet property="heightLoginButtonConstraint" destination="tt0-Iv-YRR" id="wiW-x1-54D"/>
+                        <outlet property="heightNameConstraint" destination="rUl-TF-04F" id="TME-vx-6go"/>
+                        <outlet property="heightPasswordConstraint" destination="95n-cO-BD7" id="b46-vC-We3"/>
+                        <outlet property="heightRegrisButtonConstraint" destination="X6z-aJ-yEe" id="EIk-CR-Nrf"/>
+                        <outlet property="loginButton" destination="xog-Sg-AtA" id="2hx-TI-uuO"/>
+                        <outlet property="nameTextField" destination="ibn-DK-L3s" id="z1I-Ab-wYb"/>
+                        <outlet property="passwordTextField" destination="fuG-rJ-hO7" id="JVS-T8-2mw"/>
+                        <outlet property="regrisButton" destination="JPj-O4-43h" id="4ps-Xi-L98"/>
+                        <outlet property="widthContainerViewConstraint" destination="y1q-Hj-SIV" id="0qA-1C-XzR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iy7-sz-0zh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43.478260869565219" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+</document>
